@@ -21,10 +21,11 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-      font-family: ${theme.font.family.heebo};
+      font-family: ${theme.font.family.main};
       font-size: ${theme.font.sizes.large};
-      background-color: ${theme.colors.black};
+      background-color: ${theme.colors.white};
       overflow-x: hidden;
+      color: ${theme.colors.black};
     }
 
     p {

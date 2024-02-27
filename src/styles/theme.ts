@@ -14,11 +14,8 @@ export default {
   },
   font: {
     family: {
-      inter: 'Inter',
-      heebo: 'Heebo'
+      main: 'Montserrat'
     },
-    source:
-      'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap',
     light: 300,
     normal: 400,
     semiBold: 500,
