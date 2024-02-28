@@ -24,7 +24,7 @@ export default {
     sizes: {
       xxsmall: '0.75rem', // 12px
       xsmall: '1rem', // 16px
-      small: '1.4rem', // 22.4px
+      small: '1.2rem',
       medium: '1.6rem', // 25.6px
       large: '1.8rem', // 28.8px
       xlarge: '2.0rem', // 32px
