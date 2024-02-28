@@ -2,7 +2,7 @@ import * as S from './styles'
 import iconAddFavorite from '/imagens/favorite_outline.png'
 
 export interface CardProps {
-  id: string
+  id: number
   title: string
   image: string
 }
