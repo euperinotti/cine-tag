@@ -4,16 +4,19 @@ import { BaseContainer } from './components/BaseContainer'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import Favorites from './pages/Favorites'
+import { FavoritesProvider } from './context/FavoritesContext'
 
 export default function AppRoutes() {
   return (
     <BrowserRouter>
       <Header />
       <BaseContainer>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/favorites" element={<Favorites />} />
-        </Routes>
+        <FavoritesProvider>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/favorites" element={<Favorites />} />
+          </Routes>
+        </FavoritesProvider>
       </BaseContainer>
       <Footer />
     </BrowserRouter>
