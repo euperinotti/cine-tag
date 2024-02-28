@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   padding: 0 0 1em 0;
   margin-top: 0.5em;
-  width: 202px;
+  width: 280px;
   background-color: ${theme.colors.darkGray};
   display: flex;
   flex-direction: column;

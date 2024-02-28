@@ -1,7 +1,5 @@
 import { Banner } from '@/components/Banner'
 import { Card } from '@/components/Card'
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
 import { Title } from '@/components/Title'
 import videos from '@/json/db.json'
 import * as S from './styles'
@@ -9,7 +7,6 @@ import * as S from './styles'
 export default function Home() {
   return (
     <>
-      <Header />
       <Banner image="home" />
       <Title>
         <h1>Um lugar para guardar seus vídeos e filmes!</h1>
@@ -24,7 +21,6 @@ export default function Home() {
           />
         ))}
       </S.Section>
-      <Footer />
     </>
   )
 }
