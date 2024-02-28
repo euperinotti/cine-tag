@@ -5,6 +5,7 @@ export const Container = styled.footer`
   display: flex;
   justify-content: center;
   background-color: ${theme.colors.black};
+  padding: 18px 0px;
 `
 
 export const Heading = styled.h2`
