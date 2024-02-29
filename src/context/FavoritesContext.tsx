@@ -1,3 +1,4 @@
+import { Favorite } from '@/models/Favorites'
 import {
   Dispatch,
   ReactNode,
@@ -7,21 +8,21 @@ import {
 } from 'react'
 
 interface FavoritesContextType {
-  favorites: any[]
-  setFavorites: Dispatch<SetStateAction<any[]>>
+  favorites: Favorite[]
+  setFavorites: Dispatch<SetStateAction<Favorite[]>>
 }
 
 interface FavoritesProviderProps {
   children: ReactNode
 }
 
-export const FavoritesContext = createContext<FavoritesContextType | undefined>(
+export const FavoritesContext = createContext<FavoritesContextType | any>(
   undefined
 )
 FavoritesContext.displayName = 'Favorites'
 
 export const FavoritesProvider = ({ children }: FavoritesProviderProps) => {
-  const [favorites, setFavorites] = useState<any>([])
+  const [favorites, setFavorites] = useState<Favorite[]>([])
 
   return (
     <FavoritesContext.Provider value={{ favorites, setFavorites }}>
