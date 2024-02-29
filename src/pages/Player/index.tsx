@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import videos from '@/json/db.json'
 import { Video } from '@/models/Video'
 import PageNotFound from '../404'
+import { MediaPlayer } from '@/components/MediaPlayer'
 
 export default function Player() {
   const params = useParams()
@@ -19,13 +20,7 @@ export default function Player() {
         <h1>Player</h1>
       </Title>
       <S.Container>
-        <S.IFrame
-          width="100%"
-          height="100%"
-          src={video.link}
-          title={video.titulo}
-          frameBorder="0"
-        ></S.IFrame>
+        <MediaPlayer link={video.link} title={video.titulo} />
       </S.Container>
     </>
   )
