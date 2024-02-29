@@ -9,6 +9,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  text-decoration: none;
+  color: ${theme.colors.black};
+  text-align: left;
 `
 
 export const Image = styled.img`
