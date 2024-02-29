@@ -21,7 +21,6 @@ export default function Favorites() {
             image={favorite.image}
           />
         ))}
-        <Card id={1} title="Test" image="" />
       </S.Section>
     </S.Container>
   )
